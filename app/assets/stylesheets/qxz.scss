@@ -1,35 +1,42 @@
-.bai{
-	color: white;
+table, p, h4, td, div{
+           color:white;
 }
 .bian{
-	margin: 8px;
+	margin: 5px;
 }
 .zhibiao{
-	padding:2px;
+	padding:1px;
+	margin:15px;
 }
 .suo{
 	width: 45%;
 	float: left;
 }
-.riqu{
-	padding-top: 16px;
-}
-.pad{
+.ding{
+	padding-top: 10px;
+	margin-left: 10px;
 	text-align: center;
 }
-.biao{
-	float: left;
+.pad{
+	margin-top: 5px; 
+}
+.pads{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
 }
 .tr{
 	background-color: rgba(0,0,0,0.1);
-	margin:15px;
-	padding:15px;
+	padding:10px;
+	width: 150px;
+	height: 150px;
 }
 .suoe{
-	height: 60%;
+	height: 75%;
+	width: 95%;
 }
 .lin{
 	background-color: rgba(0,0,0,0.1);
-	margin:5px;
-	padding:5px
+	padding:5px;
+	margin: 10px;
 }
