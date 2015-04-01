@@ -11,30 +11,20 @@
 	<div class="container">
 	      		<% (1..3) .each do |ind|%>
 	      			<div class="row pad">
-	      				<% (4..5).each do |int| %>
+	      				<% (3..4).each do |int| %>
 	        				 	<div class="col-xs-5 tr pad">
 		            					<%= image_tag @zhu["#{ind * int}"], class:"suo" %>
 	            						<div class="bai riqu"><%= @zi["#{ind * int}"] %></div>
+	            						<% (5..6).each do |yc| %>
 		            						<table>
 									<tr>
-										<td class="zhibiao bai">今天</td>
-										<td class="zhibiao"><button type="button" class="btn btn-info btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-success btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-primary btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-warning btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-danger btn-xs suoe"></button></td>
+										<td class="zhibiao bai"><%= @tian["#{yc}"] %></td>
+										<% (0..400).step(100) do |cy| %>
+					                                                                                <td class="zhibiao"><button type="button" class='btn <%= @se["#{ind*int*yc+cy}"]%> btn-xs suoe'></button></td>
+										<% end %>
 									</tr>
 								</table>
-								<table>
-									<tr>
-										<td class="zhibiao bai">明天</td>
-										<td class="zhibiao"><button type="button" class="btn btn-info btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-success btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-primary btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-warning btn-xs suoe"></button></td>
-										<td class="zhibiao"><button type="button" class="btn btn-danger btn-xs suoe"></button></td>
-									</tr>
-								</table>
+							<% end %>
 						</div>
 		  			<% end %>
 				</div>
@@ -45,11 +35,9 @@
 	<!--air quality-->
 	<table class="bian pad" style="margin:15px">
 		<tr>
-			<td class="zhibiao"><button type="button" class="btn btn-info btn-xs">&nbsp&nbsp低&nbsp&nbsp</button></td>
-			<td class="zhibiao"><button type="button" class="btn btn-success btn-xs">轻微</button></td>
-			<td class="zhibiao"><button type="button" class="btn btn-primary btn-xs">中等</button></td>
-			<td class="zhibiao"><button type="button" class="btn btn-warning btn-xs">较高</button></td>
-			<td class="zhibiao"><button type="button" class="btn btn-danger btn-xs">&nbsp&nbsp高&nbsp&nbsp</button></td>
+			<% (1..5).each do |cy| %>
+			<td class="zhibiao"><button type="button" class="btn <%= @se["#{cy}"]%> btn-xs"><%= @bn["#{cy}"] %></button></td>
+			<% end %>
 		</tr>
 	</table>
 
@@ -57,7 +45,8 @@
 	<!--state-->
 	<div class="lin">
 		<h4 class="bai" style=" text-align: center">疾病气象风险预报说明文字</h4>
-		<p class="bai bain" style="padding:5px">&nbsp&nbsp&nbsp&nbsp疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
+		<p class="bai bain" style="padding:5px">
+		&nbsp&nbsp&nbsp&nbsp疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
 		</p>
  	</div>
 </div>
