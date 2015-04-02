@@ -1,102 +1,84 @@
-<div>
+<div class="container white king">
+
 	<!--data-->
-	<div>
-		<p class="pull-right bian">2015年3月31号发布</p>
-              		<p class="pull-left bian">上海&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-search"> </span></p>
-              		<br />
-              		<br />
+	<div class="container out_margin">
+		<div class="pull-right">2015年3月31号发布</div>
+		<div>上海</div>
 	</div>
-	
 
 	<!--disease risk-->
 	<div class="container">
-	      		<% (1..2) .each do |ind|%>
-	      			<div class="row">
-	      				<% (3..4).each do |int| %>
-	        				 	<div class="col-xs-6">
-	        				 		<div class="tr">
-		            						<%= image_tag @zhu["#{ind * int}"], class:"suo" %>
-	            							<div class="ding"><%= @zi["#{ind * int}"] %><br /><%= @zi["#{ind * int+10}"] %></div>
-	            							<% (5..6).each do |yc| %>
-		            						<table class="zhibiao">
-									<tr>
-										<td><%= @tian["#{yc}"] %></td>
-										<% (0..400).step(100) do |cy| %>
-					                                                                                <td style="padding:1px"><button type="button" class='btn <%= @se["#{ind*int*yc+cy}"]%> btn-xs suoe'></button></td>
-										<% end %>
-									</tr>
-								</table>
-								<% end %>
+		<div class="row">
+			<% (1..5).each do |ind| %>
+		 		<div class="col-xs-6">
+		 			<div class="transparent">
+						<div class="col-xs-4"><%= image_tag   @imgs["#{ind}"] , class:"img_size" %></div>
+						<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
+						<div class="col-xs-7">儿童感冒<br />气象风险</div>
+						<% (1..2).each do |int| %>
+							<div class="col-xs-12">
+								<div class="row">
+								<div class="col-xs-2"><%= @Day["#{int}"] %></div>
+								<div class="col-xs-10">
+									<div class="row">
+										<div class="col-xs-15 lump lump_air_size">
+										</div>
+										<div class="col-xs-15 lump lump_1 lump_air_size">
+										</div>
+										<div class="col-xs-15 lump lump_2 lump_air_size">
+										</div>
+										<div class="col-xs-15 lump lump_3 lump_air_size">
+										</div>
+										<div class="col-xs-15 lump lump_4 lump_air_size">
+										</div>
+									</div>
+								</div>
+								</div>
 							</div>
-						</div>
-		  			<% end %>
+						<% end %>
+					</div>
 				</div>
-	            		<% end %>
-	            		<div class="row">
-	            			<div class="col-xs-6">
-	            				<div class="tr">
-	            					<%= image_tag @zhu["#{9}"], class:"suo" %>
-	            					<div style="padding-top:5px; margin-left: 10px;"><%= @zi["#{9}"] %><br /><%= @zi["#{19}"] %><br /><%= @zi["#{18}"] %></div>
-		            					<table class="zhibiao">
-								<tr>
-									<td><%= @tian["#{5}"] %></td>
-									<% (45..445).step(100) do |cy| %>
-					                                                                <td style="padding:1px"><button type="button" class='btn <%= @se["#{cy}"]%> btn-xs suoe'></button></td>
-									<% end %>
-								</tr>
-							</table>
-							<table class="zhibiao">
-								<tr>
-									<td><%= @tian["#{6}"] %></td>
-									<% (54..454).step(100) do |cy| %>
-					                                                                <td style="padding:1px"><button type="button" class='btn <%= @se["#{cy}"]%> btn-xs suoe'></button></td>
-									<% end %>
-								</tr>
-							</table>
-	            				</div>
-	            			</div>
-
-	            			<div class="col-xs-6">
-	            				<div class="tr">
-	            					<%= image_tag @zhu["#{12}"], class:"suo" %>
-	            					<div style="padding-top:5px; margin-left: 10px;"><br /><br /><br /><br /></div>
-		            				<table class="zhibiao">
-								<tr>
-									<td>&nbsp</td>
-									<% (45..445).step(100) do |cy| %>
-					                                                                <td style="padding:1px">&nbsp</td>
-									<% end %>
-								</tr>
-							</table>
-							<table class="zhibiao">
-								<tr>
-									<td></td>
-									<% (54..454).step(100) do |cy| %>
-					                                                                <td style="padding:1px"></td>
-									<% end %>
-								</tr>
-							</table>
-	            				</div>
-	            			</div>
-	            		</div>
+			<% end %>
+		</div>
 	</div>
 
 
 	<!--air quality-->
-	<table class="pads">
-		<tr>
-			<% (1..5).each do |cy| %>
-			<td class="zhibiao"><button type="button" style="width:35px"  class="btn <%= @se["#{cy}"]%> btn-xs"><%= @bn["#{cy}"] %></button></td>
-			<% end %>
-		</tr>
-	</table>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2"></div>
+			 <div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-15 align lump">
+						&nbsp&nbsp低&nbsp&nbsp
+					</div>
+					<div class="col-xs-15 align lump lump_1">
+						轻微
+					</div>
+					<div class="col-xs-15 align lump lump_2">
+						中等
+					</div>
+					<div class="col-xs-15 align lump lump_3">
+						较高
+					</div>
+					<div class="col-xs-15 align lump lump_4">
+						高
+					</div>
+				</div>
+				</div>
+			<div class="col-xs-2"></div>
+		</div>
+	</div>
 
 
 	<!--state-->
-	<div class="lin">
-		<h4 style=" text-align: center">疾病气象风险预报说明文字</h4>
-		<p style="padding:5px; text-indent: 2em;">
-		疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
+	<div class="out_margin transparent sel_padding state_style">
+		<h4 class="align">疾病气象风险预报说明文字</h4>
+		<p class="paragraph_head">
+		疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。
+		通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，
+		确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
 		</p>
  	</div>
+
 </div>

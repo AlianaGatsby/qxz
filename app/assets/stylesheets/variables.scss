@@ -10,3 +10,44 @@ $color-gray:#eee;
 //grid-system column padding
 
 $grid-gutter-width:10px;
+
+.col-xs-15{
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.col-xs-15 {
+    width: 19%;
+    float: left;
+    margin-right: 1px;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 19%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 19%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 19%;
+        float: left;
+    }
+}
+
+@media (max-width: 1366px) {
+    .col-lg-15 {
+        width: 19%;
+        float: left;
+    }
+}

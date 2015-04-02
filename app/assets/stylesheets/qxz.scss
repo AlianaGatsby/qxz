@@ -1,44 +1,73 @@
-table, p, h4, td, div{
-           color:white;
+.white{
+	color:white;
 }
-.bian{
-	margin: 5px;
+.out_margin{
+	margin: 10px;
 }
-.col-xs-6{
+.align{
 	text-align: center;
 }
-.zhibiao{
-	padding:1px;
-	margin:15px;
+.img_size{
+	width: 120%;
 }
-.suo{
-	width: 45%;
-	float: left;
+.png_size{
+	font-size: xx-small;
+	padding-top: 2px;
+	text-align: left;
 }
-.ding{
-	padding-top: 10px;
-	margin-left: 10px;
+.paragraph_head{
+	text-indent: 2em;
 }
-.pad{
-	margin-top: 5px; 
+.transparent{
+	background-color: rgba(0,0,0,0.15);
+	padding: 5px; 
+	.col-xs-4{
+		text-align: left;
+		padding-left: 0px;
+		margin-bottom: 10px;
+	}
+	.col-xs-7{
+		padding-top: 2px;
+		padding-left: 20px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
-.pads{
+.row{
+	.col-xs-6{
+		margin-bottom: 15px;
+	}
+}
+.lump{
+	background-color: #32b16c;
+	width: 18%;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+.lump_1{
+	background-color: #00a0e9;
+}
+.lump_2{
+	background-color: #fff100;
+}
+.lump_3{
+	background-color: #f39800;
+}
+.lump_4{
+	background-color: #ff0000;
+}
+.lump_air_size{
+	height: 12px;
+	margin-top: 3px;
+	margin-bottom: -3px;
+}
+.sel_padding{
+	padding-left: 10px;
+}
+.state_style{
+	margin-bottom: 0px;
 	margin-top: 20px;
-	margin-left: 10px;
-	margin-bottom: 20px;
 }
-.tr{
-	background-color: rgba(0,0,0,0.1);
-	padding:10px;
-	width: 100%;
-	margin-bottom: 10px;
-}
-.suoe{
-	height: 75%;
-	width: 95%;
-}
-.lin{
-	background-color: rgba(0,0,0,0.1);
-	padding:5px;
-	margin: 10px;
+.king{
+	padding-bottom: 0px;
 }
