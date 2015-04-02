@@ -32,6 +32,38 @@
 		  			<% end %>
 				</div>
 	            		<% end %>
+	            		<div class="row">
+	            			<div class="col-xs-6">
+	            				<div class="tr">
+	            					<%= image_tag @zhu["#{9}"], class:"suo" %>
+	            					<div class="ding"><%= @zi["#{9}"] %><br /><%= @zi["#{9+10}"] %></div>
+		            					<table class="zhibiao">
+								<tr>
+									<td><%= @tian["#{5}"] %></td>
+									<% (45..445).step(100) do |cy| %>
+					                                                                <td style="padding:1px"><button type="button" class='btn <%= @se["#{cy}"]%> btn-xs suoe'></button></td>
+									<% end %>
+								</tr>
+							</table>
+							<table class="zhibiao">
+								<tr>
+									<td><%= @tian["#{5}"] %></td>
+									<% (54..454).step(100) do |cy| %>
+					                                                                <td style="padding:1px"><button type="button" class='btn <%= @se["#{cy}"]%> btn-xs suoe'></button></td>
+									<% end %>
+								</tr>
+							</table>
+	            				</div>
+	            			</div>
+
+	            			<div class="col-xs-6">
+	            				<div class="tr">
+	            					<%= image_tag @zhu["#{12}"], class:"suo" %>
+	            					<div class="ding" style="margin:4px"><br /><br /><br /></div>
+		            					<div><br /><br /><br /><br /></div>
+	            				</div>
+	            			</div>
+	            		</div>
 	</div>
 
 
