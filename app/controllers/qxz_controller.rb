@@ -19,7 +19,7 @@ class QxzController < ApplicationController
                 "14"=>"气象风险",
                 "16"=>"气象风险",
                 "18"=>"气象风险",
-                "19"=>"塞性肺炎气象风险",
+                "19"=>"塞性肺炎",
                 "22"=>"",
   	}
       @tian={
