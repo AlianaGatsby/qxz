@@ -1,84 +1,142 @@
-<div class="container white king">
-
 	<!--data-->
-	<div class="container out_margin">
-		<div class="pull-right">2015年3月31号发布</div>
-		<div>上海</div>
-	</div>
+<div class="head_margin">
+<div class="pull-right">2015年3月31号发布</div>
+<div>上海</div>
+</div>
 
 	<!--disease risk-->
-	<div class="container">
-		<div class="row">
-			<% (1..5).each do |ind| %>
-		 		<div class="col-xs-6">
-		 			<div class="transparent">
-						<div class="col-xs-4"><%= image_tag   @imgs["#{ind}"] , class:"img_size" %></div>
-						<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
-						<div class="col-xs-7">儿童感冒<br />气象风险</div>
-						<% (1..2).each do |int| %>
-							<div class="col-xs-12">
-								<div class="row">
-								<div class="col-xs-2"><%= @Day["#{int}"] %></div>
-								<div class="col-xs-10">
-									<div class="row">
-										<div class="col-xs-15 lump lump_air_size">
-										</div>
-										<div class="col-xs-15 lump lump_1 lump_air_size">
-										</div>
-										<div class="col-xs-15 lump lump_2 lump_air_size">
-										</div>
-										<div class="col-xs-15 lump lump_3 lump_air_size">
-										</div>
-										<div class="col-xs-15 lump lump_4 lump_air_size">
-										</div>
-									</div>
-								</div>
-								</div>
+<div class="container">
+	<div class="row">
+
+		<!--fours-->
+		<% (1..4).each do |ind| %>
+	 		<div class="col-xs-6">
+	 			<div class="col-xs-12 transparent">
+					<div class="col-xs-4"><%= image_tag   @imgs["#{ind}"] , class:"img_size" %></div>
+					<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
+					<div class="col-xs-7"><%= @title["#{ind+1}"] %><br /><%= @title["#{1}"] %></div>
+					<div class="col-xs-12">
+						<div class="row">
+						<div class="col-xs-2">明</div>
+						<div class="col-xs-10">
+							<div class="row">
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_2 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
 							</div>
-						<% end %>
+						</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+						<div class="col-xs-2">后</div>
+						<div class="col-xs-10">
+							<div class="row">
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_1 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							</div>
+						</div>
+						</div>
 					</div>
 				</div>
-			<% end %>
+			</div>
+		<% end %>
+
+		<!--five-->
+		<div class="col-xs-6">
+	 		<div class="col-xs-12 transparent">
+				<div class="col-xs-4"><%= image_tag   @imgs["#{5}"] , class:"img_size" %></div>
+				<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
+				<div class="col-xs-7"><%= @title["#{6}"] %><br /><%= @title["#{7}"] %><br /><%= @title["#{1}"] %></div>
+				<div class="col-xs-12 five_close">
+					<div class="row">
+					<div class="col-xs-2">明</div>
+					<div class="col-xs-10">
+						<div class="row">
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_2 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+					<div class="col-xs-2">后</div>
+					<div class="col-xs-10">
+						<div class="row">
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_1 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<!--six-->
+		<div class="col-xs-6">
+			<div class="col-xs-12 transparent">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-1"></div>
+				<div class="col-xs-7"><br /><br /><br /><br /></div>
+				<% (1..2).each do |int| %>
+					<div class="col-xs-12 six_close">
+						<div class="row">
+							<div class="col-xs-2">&nbsp</div>
+							<div class="col-xs-10">
+								<div class="row">
+									<div class="col-xs-15 lump_air_size"></div>
+									<div class="col-xs-15 lump_air_size"></div>
+									<div class="col-xs-15 lump_air_size"></div>
+									<div class="col-xs-15 lump_air_size"></div>
+									<div class="col-xs-15 lump_air_size"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>	
+
 	</div>
+</div>
 
 
 	<!--air quality-->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-2"></div>
-			 <div class="col-xs-8">
-				<div class="row">
-					<div class="col-xs-15 align lump">
-						&nbsp&nbsp低&nbsp&nbsp
-					</div>
-					<div class="col-xs-15 align lump lump_1">
-						轻微
-					</div>
-					<div class="col-xs-15 align lump lump_2">
-						中等
-					</div>
-					<div class="col-xs-15 align lump lump_3">
-						较高
-					</div>
-					<div class="col-xs-15 align lump lump_4">
-						高
-					</div>
-				</div>
-				</div>
-			<div class="col-xs-2"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2"></div>
+		 <div class="col-xs-8">
+			<div class="row">
+				<div class="col-xs-15 align lump">低</div>
+				<div class="col-xs-15 align lump lump_1">轻微</div>
+				<div class="col-xs-15 align lump lump_2">中等</div>
+				<div class="col-xs-15 align lump lump_3">较高</div>
+				<div class="col-xs-15 align lump lump_4">高</div>
+			</div>
 		</div>
+		<div class="col-xs-2"></div>
 	</div>
+</div>
 
 
 	<!--state-->
-	<div class="out_margin transparent sel_padding state_style">
-		<h4 class="align">疾病气象风险预报说明文字</h4>
-		<p class="paragraph_head">
-		疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。
-		通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，
-		确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
-		</p>
- 	</div>
-
+<div class="transparent paragraph_padding paragraph_margin">
+	<h4 class="align">疾病气象风险预报说明文字</h4>
+	<p class="paragraph_head">
+	疾病风险预报产品主要有分人群感冒、儿童哮喘、慢性阻塞性肺病（COPD）以及中暑四个产品。
+	通过流行病学研究，确定影响疾病的气象环境因素，建立预测预报模型，根据天气预报和空气质量预报结果，
+	确定疾病的风险等级，针对易感人群和不利天气，给出预防建议。
+	</p>
 </div>
