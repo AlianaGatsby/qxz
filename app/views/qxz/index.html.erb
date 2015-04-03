@@ -1,7 +1,7 @@
 	<!--data-->
 <div class="head_margin">
-<div class="pull-right">2015年3月31号发布</div>
-<div>上海</div>
+	<div class="pull-right">2015年3月31号发布</div>
+	<div>上海</div>
 </div>
 
 	<!--disease risk-->
@@ -15,34 +15,25 @@
 					<div class="col-xs-4"><%= image_tag   @imgs["#{ind}"] , class:"img_size" %></div>
 					<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
 					<div class="col-xs-7"><%= @title["#{ind+1}"] %><br /><%= @title["#{1}"] %></div>
-					<div class="col-xs-12">
-						<div class="row">
-						<div class="col-xs-2">明</div>
-						<div class="col-xs-10">
+					<% (1..2).each do |ink| %>
+						<div class="col-xs-12">
 							<div class="row">
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_2 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+								<div class="col-xs-2"><%= @Day["#{ink}"] %></div>
+								<div class="col-xs-10">
+									<div class="row">
+										<% (1..5).each do |int| %>
+											<div class="col-xs-15 align lump 
+											<%= 
+											ink==1 ? int==3 ? @lump["#{3}"] : @lump["#{6}"] : int==2 ? @lump["#{2}"] : @lump["#{6}"]
+											%> 
+											lump_air_size">
+											</div>
+										<% end %>
+									</div>
+								</div>
 							</div>
 						</div>
-						</div>
-					</div>
-					<div class="col-xs-12">
-						<div class="row">
-						<div class="col-xs-2">后</div>
-						<div class="col-xs-10">
-							<div class="row">
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_1 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-								<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							</div>
-						</div>
-						</div>
-					</div>
+					<% end %>
 				</div>
 			</div>
 		<% end %>
@@ -53,34 +44,25 @@
 				<div class="col-xs-4"><%= image_tag   @imgs["#{5}"] , class:"img_size" %></div>
 				<div class="col-xs-1"><span class="glyphicon glyphicon-search png_size"></span></div>
 				<div class="col-xs-7"><%= @title["#{6}"] %><br /><%= @title["#{7}"] %><br /><%= @title["#{1}"] %></div>
-				<div class="col-xs-12 five_close">
-					<div class="row">
-					<div class="col-xs-2">明</div>
-					<div class="col-xs-10">
+				<% (1..2).each do |ink| %>
+					<div class="col-xs-12 @Five_control["#{ink}"]">
 						<div class="row">
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_2 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
+							<div class="col-xs-2"><%= @Day["#{ink}"] %></div>
+							<div class="col-xs-10">
+								<div class="row">
+									<% (1..5).each do |int| %>
+										<div class="col-xs-15 align lump 
+										<%= 
+										ink==1 ? int==3 ? @lump["#{3}"] : @lump["#{6}"] : int==2 ? @lump["#{2}"] : @lump["#{6}"]
+										%> 
+										lump_air_size">
+										</div>
+									<% end %>
+								</div>
+							</div>
 						</div>
 					</div>
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="row">
-					<div class="col-xs-2">后</div>
-					<div class="col-xs-10">
-						<div class="row">
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_1 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-							<div class="col-xs-15 lump lump_5 lump_air_size"></div>
-						</div>
-					</div>
-					</div>
-				</div>
+				<% end %>
 			</div>
 		</div>
 
@@ -96,11 +78,9 @@
 							<div class="col-xs-2">&nbsp</div>
 							<div class="col-xs-10">
 								<div class="row">
-									<div class="col-xs-15 lump_air_size"></div>
-									<div class="col-xs-15 lump_air_size"></div>
-									<div class="col-xs-15 lump_air_size"></div>
-									<div class="col-xs-15 lump_air_size"></div>
-									<div class="col-xs-15 lump_air_size"></div>
+									<% (1..5).each do |int| %>
+										<div class="col-xs-15 lump_air_size"></div>
+									<% end %>
 								</div>
 							</div>
 						</div>
@@ -119,11 +99,9 @@
 		<div class="col-xs-2"></div>
 		 <div class="col-xs-8">
 			<div class="row">
-				<div class="col-xs-15 align lump">低</div>
-				<div class="col-xs-15 align lump lump_1">轻微</div>
-				<div class="col-xs-15 align lump lump_2">中等</div>
-				<div class="col-xs-15 align lump lump_3">较高</div>
-				<div class="col-xs-15 align lump lump_4">高</div>
+				<% (1..5).each do |int| %>
+					<div class="col-xs-15 align lump <%= @lump["#{int}"] %>"><%= @lump["#{int+6}"] %></div>
+				<% end %>
 			</div>
 		</div>
 		<div class="col-xs-2"></div>
