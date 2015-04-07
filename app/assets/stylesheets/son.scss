@@ -1,12 +1,41 @@
-.row{
-	.col-xs-8{
-		padding-top: 20px;
-	}
+.text_padding{
+	padding-top: 10px;
+	margin-left: 30px;
+	width: 20%;
 }
 .top_padding{
 	padding: 10px;
 	.border_color{
 		border-color:rgba(140, 149, 177, 0.2);
-		margin: 15px 5px 15px 5px;
+		margin: 10px 5px 5px 5px;
 	}
+}
+.img_size_son{
+	width: 145%;
+	margin-left:13px;
+}
+.clean_margin{
+	padding-left: 5px;
+}
+.font_son_size_big{
+	font-size: 16px;
+}
+.font_son_size_small{
+	font-size: 13px;
+}
+.make_it_closer{
+	margin-left: -5px;
+}
+.hr_inside{
+	margin-top: -18px;
+}
+.make_it_far{
+	margin-left: 5px;
+}
+.divide{
+	margin-bottom: 10px;
+}
+.bottom_big{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
 }
