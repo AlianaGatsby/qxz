@@ -4,14 +4,14 @@ class QxzController < ApplicationController
   		"1"=>"明",
   		"2"=>"后",
   	}
-  	@imgs={
-  		"1"=>"child_cold.png",
-  		"2"=>"child_asthma.png",
-  		"3"=>"adult_cold.png",
-  		"4"=>"old_cold.png",
-  		"5"=>"lung_disease.png",
-  		"6"=>"null.png",
-  	}
+        @imgs={
+                "1"=>"child_cold.png",
+                "2"=>"child_asthma.png",
+                "3"=>"adult_cold.png",
+                "4"=>"old_cold.png",
+                "5"=>"lung_disease.png",
+                "6"=>"null.png",
+        }
   	@title={
   		"1"=>"气象风险",
   		"2"=>"儿童感冒",
@@ -39,4 +39,27 @@ class QxzController < ApplicationController
               "2"=>"",
        }
   end
+    def son
+      @lump={
+            "1"=>"",
+            "2"=>"lump_1",
+            "3"=>"lump_2",
+            "4"=>"lump_3",
+            "5"=>"lump_4",
+            "6"=>"lump_5",
+            "7"=>"低",
+            "8"=>"轻微",
+            "9"=>"中等",
+            "10"=>"较高",
+            "11"=>"高",
+      }
+     @imgs={
+                "1"=>"child_cold.png",
+                "2"=>"child_asthma.png",
+                "3"=>"adult_cold.png",
+                "4"=>"old_cold.png",
+                "5"=>"lung_disease.png",
+                "6"=>"null.png",
+      }
+    end
 end
